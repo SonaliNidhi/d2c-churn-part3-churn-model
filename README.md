@@ -122,6 +122,19 @@ Generated Outputs:
 
 ---
 
+### Threshold Selection
+
+Multiple decision thresholds were evaluated using the validation dataset.
+
+Observations:
+
+- Lower thresholds increase recall but reduce precision.
+- Higher thresholds increase precision but reduce recall.
+- A threshold of 0.40 provides a balanced trade-off between precision and recall.
+- From a business perspective, missing a churner (False Negative) is more costly than contacting a customer who would have stayed (False Positive).
+
+Therefore, 0.40 was selected as the operational threshold.
+
 ## Repository Structure
 
 d2c-churn-part3-churn-model/
